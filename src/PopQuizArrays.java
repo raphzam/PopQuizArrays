@@ -22,11 +22,9 @@ public class PopQuizArrays {
             userElement = input.nextInt();
             input.nextLine(); // buffer
 
-            for (int i = 0; i < numList.length-1; i++) {
+            for (int i = 0; i < numList.length; i++) {
                 if (numList[i] == userElement){
                     System.out.printf("The element %d is at index %d\n", userElement, i);
-                } else {
-                    System.out.println("That element is not in this array");
                 }
 
             }
@@ -49,11 +47,9 @@ public class PopQuizArrays {
             System.out.println("What element (month) are you looking for?");
             userMonth = input.nextLine();
 
-            for (int i = 0; i < monthList.length-1; i++) {
+            for (int i = 0; i < monthList.length; i++) {
                 if (monthList[i].equalsIgnoreCase(userMonth) ){//january is at monthList[0]
                     System.out.printf("The element %s is at index %d\n", userMonth, i);
-                } else {
-                    System.out.println("That element is not in this array.");
                 }
 
             }
